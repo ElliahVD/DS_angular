@@ -1,27 +1,55 @@
-# DSAngularAmandine
+Les réponses à l'examen
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
+1    Questions de cours
+1. Afin d’indiquer à Angular que je souhaite faire des requêtes http dans mon application,
+   quel module dois-je impérativement importer dans le app.module.ts ?
 
-## Development server
+le HttpClientModule
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+2. Que permet de faire cette ligne de code :
+   [class.red]="compteur < 0"
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+lorsque que le compteur passe à moin de 0 alors on applique la class rouge (ecriture? couleur de bg?)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Je viens de faire un « git clone » sur un projet Angular, je dois lancer une commande
+   afin de récupérer le dossier « node_modules », lequel ?
 
-## Running unit tests
+npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+4. Quelle est la différence entre let et const pour la déclaration de variables ?
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+let est une variable modifiable
+const est non modifiable, mais on doit affecter sa valeur lors de la declaration
 
-## Further help
+5. Un component est constitué de 4 fichiers distinct, quels sont leur rôle respectif ?
+   Préciser leur extension de fichier à chaque fois (3 me suffisent)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   component.html  ==> Template HTML du composant ==> ecrire le HTML de notre page
+   component.ts ==> Classe TypeScript du composant ==> ecrire le angular/typescript de notre page
+   component.scss ==> Fichier CSS ou SCSS du composant en fonction du choix fait lors de la config ==> ecrire le CSS de notre page
+   component.spc.ts ==>  Squelette des tests unitaires du composant  ==> ne pas toucher
+
+
+6. Je suis dans la partie html d’un component, j’écris ce code :
+   <button (click)=’’superFonctionDeClic()’’></ button>
+   Que fait-il ?
+
+il permet d'activer au click la fonction  superFonctionDeClic
+
+
+7. Avec quelle commande créée-t-on un component ?
+
+ng g c NOM_COMPONENT
+
+
+8. Dans une classe, je peux préciser un indice de visibilité sur un attribut ou une méthode,
+   il en existe 3 lesquels ?
+   Que font-ils ?
+
+private => visible uniquement dans la classe dans laquelle il ce trouve
+public => visible partout dans le projet
+protected => visible dans la classe en cours et sur ses filles (notion d'héritage)
+
